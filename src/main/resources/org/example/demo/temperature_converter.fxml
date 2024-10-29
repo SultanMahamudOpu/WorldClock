@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="org.example.demo.TemperatureController"
+            prefHeight="400.0"
+            prefWidth="600.0"
+            style="-fx-background-color: linear-gradient(#282c34, #3c4047);"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <Label text="Temperature Converter"
+           style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: linear-gradient(#61afef, #1f78d1);"
+           AnchorPane.topAnchor="20.0"
+           AnchorPane.leftAnchor="20.0"/>
+
+    <Label text="Enter Temperature:"
+           style="-fx-font-size: 14px; -fx-text-fill: #ffffff;"
+           AnchorPane.topAnchor="80.0"
+           AnchorPane.leftAnchor="20.0"/>
+
+    <TextField fx:id="temperatureInput"
+               style="-fx-background-color: #3b3f45; -fx-text-fill: white; -fx-border-color: #61afef; -fx-border-radius: 5;"
+               AnchorPane.topAnchor="100.0"
+               AnchorPane.leftAnchor="20.0"
+               AnchorPane.rightAnchor="20.0"/>
+
+    <Label text="Select Input Scale:"
+           style="-fx-font-size: 14px; -fx-text-fill: #ffffff;"
+           AnchorPane.topAnchor="150.0"
+           AnchorPane.leftAnchor="20.0"/>
+
+    <ComboBox fx:id="inputScaleComboBox"
+              style="-fx-background-color: #61afef; -fx-text-fill: white; -fx-border-color: #ffffff; -fx-border-radius: 5;"
+              AnchorPane.topAnchor="170.0"
+              AnchorPane.leftAnchor="20.0"
+              AnchorPane.rightAnchor="20.0"/>
+
+    <Label text="Select Output Scale:"
+           style="-fx-font-size: 14px; -fx-text-fill: #ffffff;"
+           AnchorPane.topAnchor="220.0"
+           AnchorPane.leftAnchor="20.0"/>
+
+    <ComboBox fx:id="outputScaleComboBox"
+              style="-fx-background-color: #61afef; -fx-text-fill: white; -fx-border-color: #ffffff; -fx-border-radius: 5;"
+              AnchorPane.topAnchor="240.0"
+              AnchorPane.leftAnchor="20.0"
+              AnchorPane.rightAnchor="20.0"/>
+
+    <Button fx:id="convertButton"
+            text="Convert"
+            style="-fx-background-color: #61afef; -fx-text-fill: white; -fx-font-size: 16px; -fx-border-radius: 5;"
+            AnchorPane.topAnchor="290.0"
+            AnchorPane.leftAnchor="20.0"/>
+
+    <Label fx:id="resultLabel"
+           text="Result: "
+           style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #61afef;"
+           AnchorPane.topAnchor="340.0"
+           AnchorPane.leftAnchor="20.0"/>
+</AnchorPane>

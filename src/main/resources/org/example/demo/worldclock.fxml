@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="600.0" spacing="20" style="-fx-background-color: #8E44AD; -fx-border-color: #2980B9; -fx-border-width: 2px; -fx-border-radius: 5px; -fx-padding: 20px;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.WorldClockController">
+
+    <children>
+        <Label fx:id="fromCountryLabel" style="-fx-text-fill: black; -fx-font-size: 18px;" text="From Country:">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+        <ComboBox fx:id="fromCountryComboBox" prefWidth="200" style="-fx-font-size: 16px;">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></ComboBox>
+        <Label style="-fx-text-fill: black; -fx-font-size: 18px;" text="Input Time (HH:MM):">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+        <TextField fx:id="timeInput" prefWidth="150.0" promptText="HH:MM" style="-fx-font-size: 16px;">
+         <VBox.margin>
+            <Insets left="120.0" right="120.0" top="10.0" />
+         </VBox.margin></TextField>
+        <Label fx:id="toCountryLabel" style="-fx-text-fill: black; -fx-font-size: 18px;" text="To Country:">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+        <ComboBox fx:id="toCountryComboBox" prefWidth="200" style="-fx-font-size: 16px;">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></ComboBox>
+        <Button onAction="#handleConvert" prefWidth="150.0" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-font-size: 16px;" text="Convert Time">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Button>
+        <Label fx:id="resultLabel" style="-fx-text-fill: black; -fx-font-size: 18px;">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+    </children>
+</VBox>
